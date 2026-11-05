@@ -9,9 +9,10 @@ public class RetratosRobots {
 	static String barbilla;
 
 	public static void main(String[] args) {
-		int otro;
+		int otro = 1;
 
 		System.out.println("Creador de Robots");
+		do {
 		String peloSele = eleccionPelo(pelo);
 		String ojosSele = eleccionOjos(ojos);
 		String orejasSele = eleccionOrejas(orejas);
@@ -23,7 +24,9 @@ public class RetratosRobots {
 		System.out.println(orejasSele);
 		System.out.println(bocaSele);
 		System.out.println(barbillaSele);
-
+		
+		otro = Integer.parseInt(IO.readln("Quieres hacer otro robor? (SI [1], NO [0]: "));
+		} while (otro == 1);
 	}
 
 	static String eleccionPelo(String pelo) {
