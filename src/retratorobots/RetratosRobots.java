@@ -15,10 +15,14 @@ public class RetratosRobots {
 		String peloSele = eleccionPelo(pelo);
 		String ojosSele = eleccionOjos(ojos);
 		String orejasSele = eleccionOrejas(orejas);
+		String bocaSele = eleccionBoca(boca);
+		String barbillaSele = eleccionBarbilla(barbilla);
 		
 		System.out.println(peloSele);
 		System.out.println(ojosSele);
 		System.out.println(orejasSele);
+		System.out.println(bocaSele);
+		System.out.println(barbillaSele);
 
 	}
 
@@ -108,5 +112,63 @@ public class RetratosRobots {
 		}
 		return orejas;
 	}
+	
+	static String eleccionBoca(String Boca) {
 
+		System.out.println("Opciones de bocas");
+		System.out.println("1. |  ===  |");
+		System.out.println("2. |   -   |");
+		System.out.println("3. |  ___  |");
+		System.out.println("4. |  ---  |");
+
+		int nBoca = Integer.parseInt(IO.readln("Elije una boca: "));
+
+		switch (nBoca) {
+		case 1:
+			boca = "|  ===  |";
+			break;
+		case 2:
+			boca = "|   -   |";
+			break;
+		case 3:
+			boca = "|  ___  |";
+			break;
+		case 4:
+			boca = ("|  ---  |");
+			break;
+		default:
+			nBoca = Integer.parseInt(IO.readln("Error, elije uno del 1 al 4 "));
+		}
+		return boca;
+	}
+	
+	static String eleccionBarbilla(String Barbilla) {
+
+		System.out.println("Opciones de barbillas");
+		System.out.println("1. \\_______/");
+		System.out.println("2. \\,,,,,,,/");
+		System.out.println("3. \\......./");
+		System.out.println("4. \\mmmmmmm/");
+
+		int nBarbilla = Integer.parseInt(IO.readln("Elije una barbilla: "));
+
+		switch (nBarbilla) {
+		case 1:
+			barbilla = "\\_______/";
+			break;
+		case 2:
+			barbilla = "\\,,,,,,,/";
+			break;
+		case 3:
+			barbilla = "\\......./";
+			break;
+		case 4:
+			barbilla = ("\\mmmmmmm/");
+			break;
+		default:
+			nBarbilla = Integer.parseInt(IO.readln("Error, elije uno del 1 al 4 "));
+		}
+		return barbilla;
+	}
+	
 }
