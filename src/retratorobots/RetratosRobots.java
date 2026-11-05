@@ -46,7 +46,7 @@ public class RetratosRobots {
 		System.out.println("4. |||||||||");
 
 		int nPelo = Integer.parseInt(IO.readln("Elije un pelo: "));
-		
+
 		switch (nPelo) {
 		case 1:
 			pelo = "WWWWWWWWW";
@@ -61,7 +61,7 @@ public class RetratosRobots {
 			pelo = ("|||||||||");
 			break;
 		default:
-				nPelo = Integer.parseInt(IO.readln("Error, elije uno del 1 al 4: "));
+			nPelo = Integer.parseInt(IO.readln("Error, elije uno del 1 al 4: "));
 		}
 		return pelo;
 	}
@@ -91,7 +91,7 @@ public class RetratosRobots {
 			ojos = ("| \\   / |");
 			break;
 		default:
-				nOjos = Integer.parseInt(IO.readln("Error, elije uno del 1 al 4: "));
+			nOjos = Integer.parseInt(IO.readln("Error, elije uno del 1 al 4: "));
 
 		}
 		return ojos;
@@ -123,7 +123,7 @@ public class RetratosRobots {
 			break;
 		default:
 
-				nOrejas = Integer.parseInt(IO.readln("Error, elije uno del 1 al 4: "));
+			nOrejas = Integer.parseInt(IO.readln("Error, elije uno del 1 al 4: "));
 		}
 		return orejas;
 	}
@@ -154,7 +154,7 @@ public class RetratosRobots {
 			break;
 		default:
 
-				nBoca = Integer.parseInt(IO.readln("Error, elije uno del 1 al 4: "));
+			nBoca = Integer.parseInt(IO.readln("Error, elije uno del 1 al 4: "));
 		}
 		return boca;
 	}
@@ -185,7 +185,7 @@ public class RetratosRobots {
 			break;
 		default:
 
-				nBarbilla = Integer.parseInt(IO.readln("Error, elije uno del 1 al 4: "));
+			nBarbilla = Integer.parseInt(IO.readln("Error, elije uno del 1 al 4: "));
 
 		}
 		return barbilla;
